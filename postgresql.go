@@ -11,7 +11,7 @@ type PostgresConfig struct {
 	User           string
 	Password       string
 	RuntimeParams  map[string]string
-	AfterConnect   func(*Conn) error
+	AfterConnect   func(*pgx.Conn) error
 	MaxConnections int
 }
 
